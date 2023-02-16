@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello StudentsController!{% endblock %}
+
+{% block body %}
+
+<div class="students-wrapper">
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Last name</th>
+		<th>Sex</th>
+		<th colspan="2">Opcje</th>
+	</tr>
+	
+	{% for student in students %}
+	<tr>
+		<td>{{ student.id }}</td>
+		<td>{{ student.name }}</td>
+		<td>{{ student.sex }}</td>
+		<td><a href="/delete-user?student_id={{ student.id }}">usuń</a></td>
+		<td><a href="/edit-user?student_id={{ student.id }}">edycja</a></td>
+	</tr>
+    {% endfor %}
+	
+	
+</table>
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+table {
+    border-radius: .2rem;
+    border-width: .2rem;
+    border-style: solid;
+    border-color: grey;
+    border-collapse: collapse;
+}
+
+td, th {
+    border-width: .2rem;
+    border-style: solid;
+    padding-inline: 1rem;
+    border-color: gray;
+    text-align: center;
+}
+
+th {
+    border-bottom-width: 0;
+    padding-block: .2rem;
+    background-color: #1115;
+}
+
+td {
+    padding-block: .5rem;
+}
+
+.students-wrapper {
+    margin: 1rem;
+    margin-top: 6rem;
+}

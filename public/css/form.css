@@ -1,0 +1,8 @@
+p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
+label {
+    margin-right: 0.5rem;
+}
